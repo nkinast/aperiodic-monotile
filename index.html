@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aperiodic Monotile</title>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="aperiodic-monotile.js"></script>
+    <script>
+      var params = {
+        width: 750,
+        height: 850,
+        filename: 'aperiodic-monotile.ggb',
+        enableRightClick: false,
+        enableShiftDragZoom: true,
+        useBrowserForJS: true,
+        showToolBar: false,
+      };
+      var applet = new GGBApplet(params, true);
+      window.addEventListener('load', function () {
+        applet.inject('ggb-element');
+      });
+    </script>
+  </head>
+  <body>
+    <div id="ggb-element"></div>
+  </body>
+</html>
